@@ -5,6 +5,7 @@ import styled from "styled-components";
 const GET_MOVIES = gql`
     query getMovie($id: Int!){
         movie(id: $id) {
+            id
             title
             medium_cover_image
             language
